@@ -11,11 +11,33 @@ const About = () => {
         <div className="about-right">
             <h3>ABOUT ME</h3>
             <h2>A Tech Enthusiast with a Creative Mind</h2>
-
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce efficitur, nisl at ornare condimentum, lacus leo feugiat magna, id imperdiet massa justo vel enim. Nulla viverra tristique arcu ac aliquet. Aliquam vehicula scelerisque efficitur. Sed euismod enim sit amet ante lacinia iaculis eleifend non dui. Donec quis laoreet tortor. Nulla eu sem et sem fringilla hendrerit non non erat. Cras porttitor, tortor a aliquam hendrerit, nisi sapien interdum leo, eu sodales risus purus at ligula.
-
+            I am currently a third-year student at Bina Nusantara University, working on various projects. At the same time, I am undertaking a part-time job teaching English in Guidance School.
+            <br /><br />
+            <p>
+            Here are some languages and technologies I have been working with:
+              <li>React.js</li>
+              <li>Python</li>
+              <li>JavaScript</li>
+              <li>C</li>
+              <br />
+              In my free time, I devote time to studying the Bible. I also enjoy expressing my creativity through drawing, content creation, and making TikToks.
             </p>
+            
+            </p>
+
+            <div className='buttons'>
+
+              <button onClick={()=> window.location.href='https://drive.google.com/file/d/1cTUIYaEvrLWLXJ4DFpGyzhMjGcxX5GGe/view?usp=sharing'} className='btn-resume'>
+                Resume 
+              </button>
+              <button onClick={()=> window.location.href='https://drive.google.com/file/d/1cTUIYaEvrLWLXJ4DFpGyzhMjGcxX5GGe/view?usp=sharing'} className='btn-resume'>
+                Certificates 
+              </button>
+              <button onClick={()=> window.location.href='https://drive.google.com/file/d/1cTUIYaEvrLWLXJ4DFpGyzhMjGcxX5GGe/view?usp=sharing'} className='btn-resume'>
+                Competition 
+              </button>
+            </div>
         </div>
     </div>
   )
