@@ -44,7 +44,7 @@ const slideBackward = ()=>{
                                 </h3>
                                 <span>A transportation service app designed to simplify pick-up and drop-off scheduling. The app offers users an easy way to book and manage rides efficiently.</span>
                             </div>
-                            <button className='btn-project'>Github</button>
+                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/PuPiGo-project-1'}>Github</button>
                         </div>
                     </div>
                 </li>
@@ -58,7 +58,7 @@ const slideBackward = ()=>{
                                 </h3>
                                 <span>Simple tool for estimating the Carbon Emissions of the majority of G20 nations based only on past Carbon Emission using MLP Regression</span>
                             </div>
-                            <button className='btn-project'>Github</button>
+                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Carbon-Emission-Estimation-for-G20-Nations-with-MLP-Regression'}>Github</button>
                         </div>
                     </div>
                 </li>
@@ -72,7 +72,7 @@ const slideBackward = ()=>{
                                 </h3>
                                 <span>A user-friendly website designed for Guidance School, featuring information about programs, enrollment, and an engaging interface to showcase the school's activities and updates.</span>
                             </div>
-                            <button className='btn-project'>Github</button>
+                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Guidance_School'}>Github</button>
                         </div>
                     </div>
                 </li>
@@ -86,7 +86,9 @@ const slideBackward = ()=>{
                                 </h3>
                                 <span>Decision Tree Algorithm implimentation for heart disease prediction based on various features</span>
                             </div>
-                            <button className='btn-project'>Github</button>
+                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Heart-Disease-Prediction'}>
+                                Github
+                            </button>
                         </div>
                     </div>
                 </li>
