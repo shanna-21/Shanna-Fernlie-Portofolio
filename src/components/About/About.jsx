@@ -31,7 +31,7 @@ const About = () => {
               <button onClick={()=> window.location.href='https://drive.google.com/file/d/1cTUIYaEvrLWLXJ4DFpGyzhMjGcxX5GGe/view?usp=sharing'} className='btn-resume'>
                 Resume 
               </button>
-              <button onClick={()=> window.location.href='https://drive.google.com/file/d/1cTUIYaEvrLWLXJ4DFpGyzhMjGcxX5GGe/view?usp=sharing'} className='btn-resume'>
+              <button onClick={()=> window.location.href='https://drive.google.com/drive/folders/1VVE37_hxOXMyVqyINUSK-pxFOdWpSwiC?usp=sharing'} className='btn-resume'>
                 Certificates 
               </button>
               <button onClick={()=> window.location.href='https://drive.google.com/file/d/1cTUIYaEvrLWLXJ4DFpGyzhMjGcxX5GGe/view?usp=sharing'} className='btn-resume'>
