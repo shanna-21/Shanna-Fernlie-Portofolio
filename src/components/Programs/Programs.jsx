@@ -31,6 +31,7 @@ const Programs = () => {
                 <p>Graphic Design</p>
             </div>
         </div>
+        
     </div>
   )
 }
