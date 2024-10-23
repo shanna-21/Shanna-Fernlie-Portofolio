@@ -8,7 +8,7 @@ import guidance from '../../assets/GuidanceWeb.png'
 import Heart from '../../assets/HeartDisease_DecisionTree.jpeg'
 import Restaurant from '../../assets/Restaurant-img.jpg'
 import Ephemeral from '../../assets/Ephemeral.jpeg'
-import Compnet from '../../assets/Compnet.jpeg'
+import Glowi from '../../assets/glowi.jpg'
 
 const Projects = () => {
 
@@ -57,6 +57,20 @@ const slideBackward = ()=>{
                 <li>
                     <div className="slide">
                         <div className="project1">
+                            <img className='image3' src={Glowi} alt="" />
+                            <div>
+                                <h3>
+                                Glow.i web
+                                </h3>
+                                <span>Glow.i is a web platform that enhances skin health through AI-based problem detection, community discussions, and a skincare e-commerce section. It provides personalized recommendations, a forum for advice exchange, and a marketplace for tailored products.</span>
+                            </div>
+                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Glow.iWeb'}>Github</button>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div className="slide">
+                        <div className="project1">
                             <img className='image2' src={CO2} alt="" />
                             <div>
                                 <h3>
@@ -76,10 +90,10 @@ const slideBackward = ()=>{
                             <img src={Restaurant} alt="" />
                             <div>
                                 <h3>
-                                    Heart  Prediction
+                                    Restaurant Reservation System
                                 </h3>
                                 <div className='capt-project'>
-                                    <span>Decision Tree Algorithm implimentation for heart disease prediction based on various features</span>
+                                    <span>A Java-based restaurant management system that streamlines orders, billing, inventory, and staff management, ensuring efficient operations and enhancing the dining experience.</span>
                                 </div>
                             </div>
                             <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Heart-Disease-Prediction'}>
@@ -122,34 +136,7 @@ const slideBackward = ()=>{
                         </div>
                     </div>
                 </li>
-                <li>
-                    <div className="slide">
-                        <div className="project1">
-                            <img className='image3' src={Ephemeral} alt="" />
-                            <div>
-                                <h3>
-                                    School Website for Guidance School (frontend)
-                                </h3>
-                                <span>A user-friendly website designed for Guidance School, featuring information about programs, enrollment, and an engaging interface to showcase the school's activities and updates.</span>
-                            </div>
-                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Guidance_School'}>Github</button>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <div className="slide">
-                        <div className="project1">
-                            <img className='image3' src={Compnet} alt="" />
-                            <div>
-                                <h3>
-                                    School Website for Guidance School (frontend)
-                                </h3>
-                                <span>A user-friendly website designed for Guidance School, featuring information about programs, enrollment, and an engaging interface to showcase the school's activities and updates.</span>
-                            </div>
-                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Guidance_School'}>Github</button>
-                        </div>
-                    </div>
-                </li>
+                
             </ul>
         </div>
     </div>

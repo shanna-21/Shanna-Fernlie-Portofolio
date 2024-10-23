@@ -66,18 +66,28 @@
 }
 
 .project1 .image1{
-    width: 500px;
+    width: 700px;
+    height: 450px;
 }
 
+.project1 img{
+    width: 700px;
+    height: 450px;
+}
+
+
 .project1 .image2{
-    width: 500px;
-    height: 320px;
+    
+    width: 700px;
+    height: 450px;
 }
 
 .project1 .image3{
-    width: 500px;
-    height: 320px;
+    width: 700px;
+    height: 450px;
 }
+
+
 
 .project1 {
     display: flex;

@@ -1,6 +1,7 @@
 .hero{
     width: 100%;
     min-height: 100vh;
+    /* background-color: red; */
     background: linear-gradient(rgba(8, 0, 58, 0.7),rgba(8,0,58,0.7)), url('../../assets/background-home.jpeg');
     background-size: cover;
     background-position: center;
@@ -11,6 +12,7 @@
 }
 
 .hero-text{
+    /* background-color: blue; */
     text-align: center;
     max-width: 800px;
 }
