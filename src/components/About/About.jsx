@@ -18,8 +18,8 @@ const About = () => {
             Here are some languages and technologies I have been working with:
               <li>React.js</li>
               <li>Python</li>
-              <li>JavaScript</li>
-              <li>C</li>
+              <li>HTML, CSS, JavaScript</li>
+              <li>PHP</li>
               <br />
               In my free time, I devote time to studying the Bible. I also enjoy expressing my creativity through drawing, content creation, and making TikToks.
             </p>
@@ -28,13 +28,13 @@ const About = () => {
 
             <div className='buttons'>
 
-              <button onClick={()=> window.location.href='https://drive.google.com/file/d/1cTUIYaEvrLWLXJ4DFpGyzhMjGcxX5GGe/view?usp=sharing'} className='btn-resume'>
+              <button onClick={()=> window.location.href='https://drive.google.com/file/d/1rGrPeelIQ1URxiP_ZIVxGGdzWGFGoRTH/view?usp=sharing'} className='btn-resume'>
                 Resume 
               </button>
               <button onClick={()=> window.location.href='https://drive.google.com/drive/folders/1VVE37_hxOXMyVqyINUSK-pxFOdWpSwiC?usp=sharing'} className='btn-resume'>
                 Certificates 
               </button>
-              <button onClick={()=> window.location.href='https://drive.google.com/file/d/1cTUIYaEvrLWLXJ4DFpGyzhMjGcxX5GGe/view?usp=sharing'} className='btn-resume'>
+              <button onClick={()=> window.location.href='https://drive.google.com/drive/folders/1tR3MD1xIKiprf5sz-6vTjD2tHrWLqdlN?usp=sharing'} className='btn-resume'>
                 Competition 
               </button>
             </div>
