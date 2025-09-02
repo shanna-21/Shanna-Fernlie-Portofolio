@@ -3,6 +3,7 @@ import './Projects.css'
 import back_btn from '../../assets/next-btn.png'
 import next_btn from '../../assets/back-btn.png'
 import Pupigo from '../../assets/PuPiGo-project.png'
+import Inatrade from '../../assets/Inatrade.png'
 import CO2 from '../../assets/CO2-1.jpg'
 import guidance from '../../assets/GuidanceWeb.png'
 import Heart from '../../assets/HeartDisease_DecisionTree.jpeg'
@@ -17,26 +18,45 @@ let tx = 0;
 
 const slideForward = ()=>{
     if(tx < 0){
-        tx +=10;
+        tx +=30;
     }
     slider.current.style.transform = `translateX(${tx}%)`
 }
 
 const slideBackward = ()=>{
     if(tx > -(25 * (6 - 1))){
-        tx -=10;
+        tx -=30;
     }
     slider.current.style.transform = `translateX(${tx}%)`
 }
 
   return (
     <div className='Projects'>
-        <img src={next_btn} alt="" className='next-btn'
+        <img src={next_btn} alt="" className='back-btn'
         onClick={slideForward}/>
-        <img src={back_btn} alt="" className='back-btn'
+        <img src={back_btn} alt="" className='next-btn'
         onClick={slideBackward}/>
         <div className='slider'>
             <ul ref={slider}>
+                <li>
+                    <div className="slide">
+                        <div className="project1">
+                            <img className='image1' src={Inatrade} alt="" />
+                            <div>
+                                <h3>
+                                    Inatrade Website
+                                </h3>
+                                <div className='capt-project'>
+
+                                    <span>A transportation service app designed to simplify pick-up and drop-off scheduling. The app offers users an easy way to book and manage rides efficiently.</span>
+                                </div>
+                            </div>
+                            <div className='btn-container0'>
+                                <button className='btn-project' onClick={() => window.location.href='https://inatrade.kemendag.go.id/#/'}>Website</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li>
                     <div className="slide">
                         <div className="project1">
@@ -50,7 +70,9 @@ const slideBackward = ()=>{
                                     <span>A transportation service app designed to simplify pick-up and drop-off scheduling. The app offers users an easy way to book and manage rides efficiently.</span>
                                 </div>
                             </div>
-                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/PuPiGo-project-1'}>Github</button>
+                            <div className='btn-container1'>
+                                <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/PuPiGo-project-1'}>Github</button>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -60,11 +82,13 @@ const slideBackward = ()=>{
                             <img className='image3' src={Glowi} alt="" />
                             <div>
                                 <h3>
-                                Glow.i web
+                                Glow.i Website
                                 </h3>
                                 <span>Glow.i is a web platform that enhances skin health through AI-based problem detection, community discussions, and a skincare e-commerce section. It provides personalized recommendations, a forum for advice exchange, and a marketplace for tailored products.</span>
                             </div>
-                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Glow.iWeb'}>Github</button>
+                            <div className='btn-container2'>
+                                <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Glow.iWeb'}>Github</button>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -80,7 +104,9 @@ const slideBackward = ()=>{
                                     <span>Simple tool for estimating the Carbon Emissions of the majority of G20 nations based only on past Carbon Emission using MLP Regression</span>
                                 </div>
                             </div>
-                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Carbon-Emission-Estimation-for-G20-Nations-with-MLP-Regression'}>Github</button>
+                            <div className='btn-container3'>
+                                <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Carbon-Emission-Estimation-for-G20-Nations-with-MLP-Regression'}>Github</button>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -96,9 +122,11 @@ const slideBackward = ()=>{
                                     <span>A Java-based restaurant management system that streamlines orders, billing, inventory, and staff management, ensuring efficient operations and enhancing the dining experience.</span>
                                 </div>
                             </div>
-                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Heart-Disease-Prediction'}>
-                                Github
-                            </button>
+                            <div className='btn-container4'>
+                                <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Heart-Disease-Prediction'}>
+                                    Github
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -108,13 +136,15 @@ const slideBackward = ()=>{
                             <img className='image3' src={guidance} alt="" />
                             <div>
                                 <h3>
-                                    School Website for Guidance School (frontend)
+                                    School Website for Guidance School
                                 </h3>
                                 <div className='capt-project'>
                                     <span>A user-friendly website designed for Guidance School, featuring information about programs, enrollment, and an engaging interface to showcase the school's activities and updates.</span>
                                 </div>
                             </div>
-                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Guidance_School'}>Github</button>
+                            <div className='btn-container5'>
+                                <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Guidance_School'}>Github</button>
+                            </div>
                         </div>
                     </div>
                 </li>
@@ -130,9 +160,11 @@ const slideBackward = ()=>{
                                     <span>Decision Tree Algorithm implimentation for heart disease prediction based on various features</span>
                                 </div>
                             </div>
-                            <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Heart-Disease-Prediction'}>
-                                Github
-                            </button>
+                            <div className='btn-container6'>
+                                <button className='btn-project' onClick={() => window.location.href='https://github.com/shanna-21/Heart-Disease-Prediction'}>
+                                    Github
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </li>

@@ -9,6 +9,7 @@ import Github from '../../assets/github-icon-1.png'
 const Navbar = () => {
 
 const[sticky, setSticky] = useState(false);
+const [menuOpen, setMenuOpen] = useState(false)
 
 useEffect(()=>{
     window.addEventListener('scroll', ()=>{
@@ -23,10 +24,16 @@ const scrollToSection = (sectionId) => {
   return (
     <nav className={`container ${sticky? 'dark-nav' : ''}`}>
         <img src={logo} alt="" className='logo'/>
-        <ul>
+        <div
+          className="hamburger"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          ☰
+        </div>
+        <ul className={menuOpen ? 'open' : ''}>
             <li><Link to='hero' smooth={true} offset={0} duration={500}>Home</Link></li>
             <li><Link to='about' smooth={true} offset={0} duration={500}>About Me</Link></li>
-            <li><Link to='program' smooth={true} offset={0} duration={500}>Offer</Link></li>
+            <li><Link to='experience-section' smooth={true} offset={0} duration={500}>Experience</Link></li>
             {/* <li>Campus</li> */}
             <li><Link to='Projects' smooth={true} offset={0} duration={500}>Projects</Link></li>
             <li>

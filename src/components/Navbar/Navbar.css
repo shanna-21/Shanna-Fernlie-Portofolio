@@ -1,80 +1,119 @@
-nav{
-    width: 100%;
-    /* background: #333; */
-    color: white;
-    padding: 4px 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 10;
+nav {
+  width: 100%;
+  color: white;
+  padding: 4px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
 }
 
-.logo{
-    width: 150px;
-    padding-top: 10px;
-    
+.logo {
+  width: 150px;
+  padding-top: 10px;
 }
-nav ul{
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center items horizontally */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    list-style: none; /* Remove bullet points */
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 nav ul img {
-    width: 28px;
-    cursor: pointer; /* Make icons clickable */
+  width: 28px;
+  cursor: pointer;
 }
 
-nav ul img.git-icon{
-    width: 30px;
-    cursor: pointer; /* Make icons clickable */
+nav ul img.git-icon {
+  width: 30px;
 }
-nav ul img.linked-icon{
-    width: 30px;
-    cursor: pointer; /* Make icons clickable */
-}
-nav ul li{
-    display: inline-block;
-    justify-content: center;
-    list-style: none;
-    margin: 5px 10px;
-    padding-top: 10px;
-    font-size: 16px;
+nav ul img.linked-icon {
+  width: 30px;
 }
 
-
-.container{
-    padding-left: 10%;
-    padding-right: 10%;
+nav ul li {
+  display: inline-block;
+  justify-content: center;
+  list-style: none;
+  margin: 5px 10px;
+  padding-top: 10px;
+  font-size: 16px;
 }
 
-.btn{
-    background-color: #fff;
-    color: #212122;
-    padding: 14px 25px;
-    /* background-color: red; */
-    font-size: 16px;
-    border-radius: 30px;
-    cursor: pointer;
-    border: 0;
-    cursor: pointer;
-    outline: 0;
-    display: inline-flex;
-    justify-content: center;
+.container {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.btn {
+  background-color: #fff;
+  color: #212122;
+  padding: 14px 25px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn img {
+  width: 10px;
+  margin-left: 10px;
+}
+
+.dark-nav {
+  background: #212ea0;
+  transition: 0.3s;
+}
+
+/* ========== HAMBURGER ========== */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+  margin-right: 10px;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+@media (max-width: 768px) {
+  /* Hide the ul by default on small screens */
+  nav ul {
+    position: absolute;
+    top: 60px; /* below navbar */
+    right: 0;
+    width: 220px;
+    height: 100vh;
+    background: #212ea0; /* same as dark-nav */
+    flex-direction: column;
     align-items: center;
-}
+    justify-content: flex-start;
+    gap: 20px;
+    padding-top: 40px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
 
-.btn img{
-    width: 10px;
-    margin-left: 10px;
-}
+  nav ul li {
+    margin: 15px 0;
+    font-size: 18px;
+  }
 
-.dark-nav{
-    background: #212ea0;
-    transition: 0.3s;
+  /* When menu is open */
+  nav ul.open {
+    transform: translateX(0);
+  }
+
+  /* Show hamburger on small screens */
+  .hamburger {
+    display: block;
+  }
 }

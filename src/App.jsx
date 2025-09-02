@@ -14,9 +14,9 @@ const App = () => {
       <Hero/>
       <div>
         <About/>
-        <Title subTitle='INTERESTS' title='What I Offer'/>
+        <Title subTitle='EXPERIENCE' title='Work Experinces'/>
         <Programs/>
-        <Title subTitle='PROJECTS' title='Some Projects I did in My Leisure Time'/>
+        <Title subTitle='PROJECTS' title='Projects I Contributed In'/>
         <Projects/>
         <Footer/>
       </div>

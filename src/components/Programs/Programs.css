@@ -1,49 +1,100 @@
-.programs{
-    margin: 80px auto;
-    width: 98%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.experience-section {
+  padding: 60px 10%;
+  color: black;
+  font-family: Arial, sans-serif;
 }
 
-.program img{
-    width: 100%;
-    border-radius: 10px;
-    display: block;
+.experience-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #223;
+  padding-bottom: 10px;
+  color: #212ea0;
 }
 
-.program{
-    flex-basis: 31%;
-    position: relative;
+.experience-container {
+  display: flex;
+  gap: 40px;
 }
 
-.caption{
-    border-radius: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: rgba(0,15,152,0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.experience-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+  border-left: 2px solid #223;
+}
+
+.experience-list li {
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-left: 3px solid transparent;
+}
+
+.experience-list li:hover {
+  color: black;
+}
+
+.experience-list li.active {
+  color: #212ea0;
+  border-left: 3px solid #223;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.experience-details {
+  flex: 1;
+}
+
+.experience-details h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.experience-details .company {
+  color: #212ea0;
+}
+
+.experience-details .duration {
+  display: block;
+  font-size: 14px;
+  margin: 8px 0 16px;
+  color: black;
+}
+
+.experience-details ul {
+  padding-left: 20px;
+}
+
+.experience-details ul li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: black;
+  list-style: "▸ ";
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experience-container {
     flex-direction: column;
-    color: #fff;
-    cursor: pointer;
-    opacity: 0;
-    padding-top: 75%;
-    transition: 0.4s;
-}
+  }
 
-.caption img{
-    width: 60px;
-    margin-bottom: 10px;
+  .experience-list {
+    display: flex;
+    flex-direction: row;
+    border-left: none;
+    border-bottom: 2px solid #223;
+    overflow-x: auto;
+  }
 
-}
+  .experience-list li {
+    border-left: none;
+    border-bottom: 3px solid transparent;
+    padding: 10px 15px;
+    white-space: nowrap;
+  }
 
-.program:hover .caption{
-    opacity: 1;
-    /* transition: ; */
-    padding-top: 0;
+  .experience-list li.active {
+    border-bottom: 3px solid #8be9fd;
+  }
 }

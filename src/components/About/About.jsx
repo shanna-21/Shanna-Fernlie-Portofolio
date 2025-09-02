@@ -12,16 +12,22 @@ const About = () => {
             <h3>ABOUT ME</h3>
             <h2>A Tech Enthusiast with a Creative Mind</h2>
             <p>
-            I am currently a third-year student at Bina Nusantara University, working on various projects. At the same time, I am undertaking a part-time job teaching English in Guidance School.
+            I am currently a university student undertaking Master's degree in Computer Science at Bina Nusantara University. At the same time, I am undertaking a part-time job in teaching English at Guidance School.
             <br /><br />
             <p>
-            Here are some languages and technologies I have been working with:
-              <li>React.js</li>
-              <li>Python</li>
-              <li>HTML, CSS, JavaScript</li>
-              <li>PHP</li>
-              <br />
-              In my free time, I devote time to studying the Bible. I also enjoy expressing my creativity through drawing, content creation, and making TikToks.
+              Here are some languages and technologies I have been working with:
+              <ul className="tech-list">
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>JavaScript</li>
+                <li>Laravel</li>
+                <li>C#</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+                <li>Machine Learning libraries</li>
+              </ul>
+              In my free time, I devote time to studying the Bible. I also enjoy expressing my creativity through drawing and content creation.
             </p>
             
             </p>
