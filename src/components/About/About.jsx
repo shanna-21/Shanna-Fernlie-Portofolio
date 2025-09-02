@@ -3,6 +3,7 @@ import './About.css'
 import portrait from '../../assets/selfie.jpg'
 
 const About = () => {
+  
   return (
     <div className='about'>
         <div className="about-left">
