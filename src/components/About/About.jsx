@@ -35,7 +35,7 @@ const About = () => {
 
             <div className='buttons'>
 
-              <button onClick={()=> window.location.href='https://drive.google.com/file/d/1rGrPeelIQ1URxiP_ZIVxGGdzWGFGoRTH/view?usp=sharing'} className='btn-resume'>
+              <button onClick={()=> window.location.href='https://drive.google.com/file/d/1R61w0wBeF3reNWixYVjsg-EnaBZUJ1gT/view?usp=sharing'} className='btn-resume'>
                 Resume 
               </button>
               <button onClick={()=> window.location.href='https://drive.google.com/drive/folders/1VVE37_hxOXMyVqyINUSK-pxFOdWpSwiC?usp=sharing'} className='btn-resume'>
